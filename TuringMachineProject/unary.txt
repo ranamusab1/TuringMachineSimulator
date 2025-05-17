@@ -1,0 +1,65 @@
+MACHINE FOR COPYING STRING
+
+//input symbols
+0 1
+
+//tape symbols - other than inputs
+P Q X Y
+
+//blank symbol
+B
+
+//number of states
+6
+
+//start state
+0
+
+//transitions
+//format - read,write,shift,next state
+
+//q0
+5
+0 X R 1
+1 Y R 2
+P P R 0
+Q Q R 0
+B B L 4
+
+//q1
+5
+0 0 R 1
+1 1 R 1
+P P R 1
+Q Q R 1
+B P L 3
+
+//q2
+5
+0 0 R 2
+1 1 R 2
+P P R 2
+Q Q R 2
+B Q L 3
+
+//q3
+6
+0 0 L 3
+1 1 L 3
+P P L 3
+Q Q L 3
+X X R 0
+Y Y R 0
+
+//q4
+5
+P 0 L 4
+Q 1 L 4
+X 0 L 4
+Y 1 L 4
+B B R 5
+
+//q5
+0
+
+
